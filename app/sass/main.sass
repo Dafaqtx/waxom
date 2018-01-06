@@ -78,6 +78,7 @@ html, body
 	line-height: 23px
 	text-transform: uppercase
 	text-decoration: none
+	text-align: center
 
 	&:active
 			transition: all .2s
@@ -179,4 +180,145 @@ html, body
 		font-size: 18px
 		font-weight: 300
 		text-align: left
-		
+
+#projects
+	padding: 80px 0 80px 0
+
+.projects
+	
+	&__title
+		color: #555555
+		font-family: $raleway
+		font-size: 30px
+		font-weight: 700
+		text-align: center
+		margin: 0 auto 24px auto
+
+	&__text
+		max-width: 760px
+		margin: auto
+		color: #8c8c8c
+		font-family: $montserrat
+		font-size: 16px
+		font-weight: 300
+		line-height: 28px
+		text-align: center
+		margin-bottom: 40px
+
+	&__btns
+		max-width: 605px
+		margin: auto
+		display: flex
+
+	&__btn
+		margin-right: 10px
+	
+	&__items
+		padding-top: 40px
+
+	&__item
+		padding-bottom: 25px
+
+		&--container
+			margin-top: -4px;
+			padding: 20px
+			background-color: #fbfaf8
+			position: relative
+
+	&__img img
+	    width: 100%
+	    position: relative
+	    top: 0
+	    left: 0
+
+	&__buttons
+	    position: absolute
+	    top: 35%
+	    left: 50%
+	    transform: translate(-50%, -50%)
+
+	&__fa
+	    border-radius: 50%
+	    display: inline-block
+	    font-size: 16px
+	    text-align: center
+	    text-decoration: none
+	    width: 40px
+	    height: 40px
+	    position: relative
+	    transform: rotateZ(360deg) scale(0)
+	    transition: transform 0.3s
+
+	&__fa-link
+	    transform-origin: 105% 50%
+
+	&__fa-search
+	    transform-origin: -5% 50%
+
+	&__item:hover .projects__buttons .projects__fa
+	    transform: rotateZ(0deg) scale(1)
+
+	&__item:hover .projects__item--container
+		transition: all .3s
+		background: #362f2d
+	
+	&__triangle
+		position: absolute
+		top: -10px
+		width: 0
+		height: 0
+		border-left: 15px solid transparent
+		border-right: 15px solid transparent
+		border-bottom: 10px solid #fbfaf8
+
+	&__item:hover .projects__triangle
+		transition: all .3s
+		border-bottom: 10px solid #362f2d
+	
+	&__overlay
+		background: #000
+		z-index: 100
+
+	&__img
+
+		img
+			width: 100%
+
+	&__name
+		color: $hover_brown
+		font-family: $raleway
+		font-size: 20px
+		font-weight: 500
+		margin-bottom: 5px
+
+	&__item:hover .projects__name
+		color: #fff
+
+	&__author
+		color: #d1d1d1
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 300
+		line-height: 20px
+
+	&__item:hover .projects__author
+		color: $hover_brown
+
+	
+	
+.normal-btn
+	display: block
+	padding: 6px 20px
+	border-radius: 3px
+	border: 1px solid #ebebeb
+	color: #8c8c8c
+	font-family: $montserrat
+	font-size: 14px
+	font-weight: 300
+	line-height: 21px
+	text-decoration: none
+
+.normal-btn.active
+	border-radius: 3px
+	background-color: $primary
+	color: #fff
