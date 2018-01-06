@@ -48,7 +48,7 @@ html, body
 		color: #fff
 		font-family: $raleway
 		font-size: 52px
-		font-weight: 700
+		font-weight: 800
 		margin-top: 14px
 		margin-bottom: 19px
 
@@ -83,3 +83,47 @@ html, body
 	line-height: 23px
 	text-transform: uppercase
 	text-decoration: none
+
+#services
+	padding: 80px 0 80px 0
+
+.services
+	
+	&__icon
+		min-height: 53px
+
+	&__item
+		text-align: center
+
+		&:hover .services__svg
+			transition: all .3s
+			fill: $hover_brown
+
+		&:hover .services__title
+			transition: all .3s
+			color: $hover_brown
+		
+		&:hover .services__border
+			transition: all .3s
+			background: $hover_brown
+
+	&__title
+		margin: 30px 0 20px 0
+		color: #555555
+		font-family: $raleway
+		font-size: 22px
+		font-weight: 800
+
+	&__text
+		color: #8c8c8c
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 300
+		line-height: 24px
+
+	&__border
+		margin-top: 30px
+		width: 70px
+		margin: auto
+		height: 3px
+		background-color: #f1eee9
