@@ -43,6 +43,7 @@ html, body
 		font-family: $raleway
 		font-size: 36px
 		font-weight: 300
+		margin: 0
 
 	&__name
 		color: #fff
@@ -60,20 +61,14 @@ html, body
 		line-height: 24px
 
 	&__btn
-		width: 170px
-		margin: auto
-		box-shadow: inset 0 -3px 0 darken($primary, 15%)
-		border-radius: 3px
-		background-color: $primary
-
-
-		&:active
-			transition: all .2s
-			background-color: darken($primary, 10%)
-			box-shadow: inset 0 3px 0 darken($primary, 15%)
-
+		margin-top: 52px
+	
 .primary-btn
-	margin-top: 52px
+	width: 170px
+	margin: auto
+	box-shadow: inset 0 -3px 0 darken($primary, 15%)
+	border-radius: 3px
+	background-color: $primary
 	display: block
 	padding: 15px 0
 	color: #fff
@@ -83,6 +78,11 @@ html, body
 	line-height: 23px
 	text-transform: uppercase
 	text-decoration: none
+
+	&:active
+			transition: all .2s
+			background-color: darken($primary, 10%)
+			box-shadow: inset 0 3px 0 darken($primary, 15%)
 
 #services
 	padding: 80px 0 80px 0
@@ -127,3 +127,56 @@ html, body
 		margin: auto
 		height: 3px
 		background-color: #f1eee9
+
+.ideas
+	padding-top: 60px
+	text-align: center
+	background-color: #fbfaf8
+	
+	&__title
+		color: #555555
+		font-family: $raleway
+		font-size: 30px
+		font-weight: 700
+		margin: 0
+
+	&__text
+		margin: 25px auto 40px auto
+		max-width: 760px
+		color: #8c8c8c
+		font-family: $montserrat
+		font-size: 16px
+		font-weight: 300
+		line-height: 28px
+
+	&__browser
+		max-width: 1230px
+		margin: auto
+		margin-bottom: -4px;
+
+		img
+			width: 100%
+
+.theme
+	padding: 50px 0
+	background-color: #f4f5f8
+	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+	
+	&__title
+		color: #ffffff
+		font-family: $raleway
+		font-size: 28px
+		font-weight: 400
+		margin: 0
+		text-align: left
+		
+		&--letter
+			color: $hover_brown
+
+	&__text
+		color: #615855
+		font-family: $montserrat
+		font-size: 18px
+		font-weight: 300
+		text-align: left
+		
