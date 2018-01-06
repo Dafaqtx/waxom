@@ -1,5 +1,85 @@
 @import "normalize"
+@import "variables"
 
 html, body
-	font-family: 'Lato', sans-serif
+	font-family: 'Raleway', sans-serif
 	background: #fff
+
+/* header styles */
+
+.header
+	padding-top: 35px
+	background: url('../img/header/hero.jpg') center / cover no-repeat
+	height: 100vh
+
+.menu
+	
+	&__list
+		list-style: none
+		margin: 0
+		padding-left: 0
+	
+	&__item
+		margin-right: 24px
+
+	&__link
+		text-decoration: none
+		color: #fff
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 300
+
+		&:hover
+			transition: all .3s
+			color: $hover_brown
+
+.slogan
+	padding-top: 23vh
+	margin: auto
+	text-align: center
+
+	&__title
+		color: #fff
+		font-family: $raleway
+		font-size: 36px
+		font-weight: 300
+
+	&__name
+		color: #fff
+		font-family: $raleway
+		font-size: 52px
+		font-weight: 700
+		margin-top: 14px
+		margin-bottom: 19px
+
+	&__desc
+		color: #fff
+		font-family: $montserrat
+		font-size: 16px
+		font-weight: 300
+		line-height: 24px
+
+	&__btn
+		width: 170px
+		margin: auto
+		box-shadow: inset 0 -3px 0 darken($primary, 15%)
+		border-radius: 3px
+		background-color: $primary
+
+
+		&:active
+			transition: all .2s
+			background-color: darken($primary, 10%)
+			box-shadow: inset 0 3px 0 darken($primary, 15%)
+
+.primary-btn
+	margin-top: 52px
+	display: block
+	padding: 15px 0
+	color: #fff
+	font-family: $raleway
+	font-size: 14px
+	font-weight: 700
+	line-height: 23px
+	text-transform: uppercase
+	text-decoration: none
