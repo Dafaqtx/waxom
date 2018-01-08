@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// btn in projects select
 	$('.normal-btn').on('click', function(e) {
 		e.preventDefault();
-		('.normal-btn').removeClass('active');
+		$('.normal-btn').removeClass('active');
 		$(this).addClass('active');
 	});
 
