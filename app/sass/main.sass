@@ -571,3 +571,161 @@ html, body
 #partners
 	background: url('../img/partners/partner-bg.jpg') no-repeat
 	padding: 137px 0
+
+#about
+	background-color: #191919
+	padding: 80px 0
+
+.about
+	
+	&__desc
+		margin-top: 20px
+		color: #555555
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 600
+		line-height: 24px
+
+		&:hover
+			transition: all .3s
+			color: $hover_brown
+
+	&__more
+		display: block
+		color: #d1d1d1
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 600
+		line-height: 20px
+		margin-top: 33px
+		position: relative
+		text-decoration: none
+
+		&:hover
+			text-decoration: underline
+
+		&::after
+			content: ''
+			position: absolute
+			top: 7px
+			left: 90px
+			width: 5px
+			height: 8px
+			background: url('../img/about/arrow.png')
+
+.recent
+	padding-top: 25px
+	
+	&__title
+		color: #ffffff
+		font-family: $raleway
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 15px
+	
+
+	&__item
+		display: block
+		padding: 20px 0
+		border-bottom: 2px solid #252525
+		text-decoration: none
+
+		&:hover .recent__date
+			transition: all .3s
+			color: #fff
+
+		&:hover .recent__text
+			transition: all .3s
+			color: $hover_brown
+
+	&__item.last
+		padding-bottom: 0
+		border-bottom: none
+
+
+	&__date
+		color: #363636
+		font-family: $montserrat
+		font-size: 12px
+		font-weight: 600
+		line-height: 20px
+		margin-bottom: 10px
+
+	&__text
+		color: #555
+		font-family: #montserrat
+		font-size: 14px
+		font-weight: 600
+		line-height: 20px
+
+.twitter
+	padding-top: 25px
+
+	&__title
+		color: #fff
+		font-family: $raleway
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 15px;
+
+	&__item
+		display: block
+		padding-top: 20px
+		border-bottom: 2px solid #252525
+
+		&.last
+			border-bottom: none
+
+
+	&__text
+		color: #555
+		font-family: #montserrat
+		font-size: 14px
+		font-weight: 600
+		line-height: 20px
+
+	&__item:hover .twitter__text
+		transition: all .3s
+		color: $hover_brown
+
+	&__link
+		color: #00bff3
+		text-decoration: none
+		font-weight: 300
+
+		&--bit
+			text-decoration: none
+			color: #959595
+
+			&:hover
+				text-decoration: underline
+	&__item:hover .twitter__link
+		transition: all .3s
+		color: lighten(#00bff3, 20%)
+
+	&__time
+		color: #363636
+		font-family: $montserrat
+		font-size: 12px
+		font-weight: 600
+		line-height: 20px
+		padding: 12px 0 18px 0
+
+	&__item:hover .twitter__time
+		transition: all .3s
+		color: #fff
+
+.dribble
+	padding-top: 25px
+
+	&__title
+	color: #fff
+	font-family: $raleway
+	font-size: 24px
+	font-weight: 700
+	
+	&__img
+		margin-top: 25px
+
+		img
+			width: 48%
