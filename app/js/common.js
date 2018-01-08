@@ -26,4 +26,32 @@ $(document).ready(function() {
 			show = false;
 		}
 	});
+
+	//posts slider
+	$('.posts').slick({
+        dots: false,
+  		infinite: true,
+  		speed: 300,
+  		slidesToShow: 3,
+  		responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '15px',
+	        slidesToShow: 1
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '15px',
+	        slidesToShow: 1
+	      }
+	    }
+	  ]
+    });
 });
