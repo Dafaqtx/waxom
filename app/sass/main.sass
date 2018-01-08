@@ -402,8 +402,7 @@ html, body
 
 #counters
 	margin-top: -4px
-	padding: 70px 0 80px 0
-	height: 300px
+	padding: 70px 0 43px 0
 	background-color: #f4f5f8
 	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
 
@@ -435,3 +434,124 @@ html, body
 		margin: auto
 		height: 2px
 		background-color: #fff
+
+#posts
+	padding-top: 80px
+	padding-bottom: 80px
+
+.posts
+	margin-top: 40px
+	
+	&__title
+		color: #555555
+		font-family: $raleway
+		font-size: 30px
+		font-weight: 700
+		text-align: center
+
+	&__text
+		color: #8c8c8c
+		font-family: $montserrat
+		font-size: 16px
+		font-weight: 300
+		line-height: 28px
+		text-align: center
+		max-width: 760px
+		margin: 30px auto 0 auto
+	
+	&__img img
+		width: 100%
+
+	&__item
+		position: relative
+		border: 1px solid #f8f8f8
+
+		&--container
+			margin-top: -4px
+			padding: 30px
+
+	&__item:hover .posts__item--container
+		background-color: #362f2d
+		transition: all .3s
+	
+	&__date
+		position: absolute
+		top: 20px
+		left: 40px
+
+	&__day
+		width: 50px
+		border-radius: 3px 3px 0 0
+		background-color: #363636
+		text-align: center
+		color: #fff
+		font-family: $montserrat
+		font-size: 24px
+		font-weight: 300
+		line-height: 35px
+
+	&__item:hover .posts__day
+		background: #c7b299
+		transition: all .3s
+
+	&__month
+		width: 50px
+		border-radius: 0 0 3px 3px
+		background-color: #252525
+		color: #ffffff
+		font-family: $roboto
+		font-size: 12px
+		font-weight: 400
+		line-height: 28px
+		text-align: center
+
+	&__item:hover .posts__month
+		background: #a48d72
+		transition: all .3s
+
+
+	&__name
+		color: #555555
+		font-family: $raleway
+		font-size: 20px
+		font-weight: 500
+
+	&__item:hover .posts__name
+		color: $hover_brown
+		transition: all .3s
+
+
+	&__desc
+		margin-top: 20px
+		color: #8c8c8c
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 300
+		line-height: 22px
+
+	&__item:hover .posts__desc
+		color: #fff
+		transition: all .3s
+
+	&__more
+		display: block
+		margin-top: 27px
+		color: $hover_brown
+		font-family: $montserrat
+		font-size: 14px
+		font-weight: 300
+		line-height: 20px
+		position: relative
+
+		&:hover
+			cursor: pointer
+
+		&::after
+			content: ''
+			position: absolute
+			left: 85px
+			top: 6px
+			width: 5px
+			height: 8px
+			background: url('../img/posts/arrow.png')
+	
