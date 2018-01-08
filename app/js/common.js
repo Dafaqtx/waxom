@@ -21,7 +21,8 @@ $(document).ready(function() {
 		if(w_top + 700 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
 			$('.counters__number').spincrement({
     			from: 0,
-    			duration: 5000
+    			duration: 5000,
+    			thousandSeparator: false
    			});
 			show = false;
 		}
