@@ -11,8 +11,22 @@ html, body
 	padding-top: 35px
 	background: url('../img/header/hero.jpg') center / cover no-repeat
 	height: 100vh
+	
+	&__fixed-menu
+		transition: all .3s
+
+	&__fixed-menu.active
+		transition: all .3s
+		padding: 10px 0 5px 0
+		background-color: #7e6d5d
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 1000
+
 
 .menu
+
 	
 	&__list
 		list-style: none
