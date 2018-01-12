@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	// wow init
+	new WOW().init();
+
 	// btn in projects select
 	$('.normal-btn').on('click', function(e) {
 		e.preventDefault();
@@ -26,6 +29,7 @@ $(document).ready(function() {
    			});
 			show = false;
 		}
+
 	});
 
 	//posts slider

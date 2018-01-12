@@ -35,7 +35,8 @@ gulp.task('browser-sync', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/spincrement/jquery.spincrement.min.js'
+		'app/libs/spincrement/jquery.spincrement.min.js',
+		'app/libs/wow/wow.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
